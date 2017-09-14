@@ -6,6 +6,8 @@ var crystal2Val;
 var crystal3Val;
 var crystal4Val;
 var userNumber;
+var wins = 0;
+var losses = 0;
 
 function gameStart() {
  targetNumber = Math.floor(Math.random()*100)+30;
@@ -16,6 +18,8 @@ function gameStart() {
  userNumber = 0;
  $(".targetNumber").text(targetNumber);
  $(".userNumber").text(userNumber);
+ $(".wins").text("Wins: " + wins);
+ $(".losses").text("Losses: " + losses);
 }
 
 gameStart();
@@ -36,11 +40,13 @@ $(".crystal1").on("click", function(){
 	$(".userNumber").text(userNumber);
 	if (userNumber === targetNumber){
 		alert("you win!!!!");
+		wins++
 		gameStart();
 	}
 
 	if (userNumber > targetNumber){
 		alert("you lose!!!")
+		losses++
 		gameStart();
 	}
 });
@@ -52,11 +58,13 @@ $(".crystal2").on("click", function(){
 	$(".userNumber").text(userNumber);
 	if (userNumber === targetNumber){
 		alert("you win!!!!");
+		wins++
 		gameStart();
 	}
 
 	if (userNumber > targetNumber){
 		alert("you lose!!!")
+		losses++
 		gameStart();
 	}	
 });
@@ -68,11 +76,13 @@ $(".crystal3").on("click", function(){
 	$(".userNumber").text(userNumber);
 	if (userNumber === targetNumber){
 		alert("you win!!!!");
+		wins++
 		gameStart();
 	}
 
 	if (userNumber > targetNumber){
 		alert("you lose!!!")
+		losses++
 		gameStart();
 	}	
 });
@@ -82,28 +92,29 @@ $(".crystal4").on("click", function(){
 	userNumber = userNumber + crystal4Val;
 	console.log(userNumber);
 	$(".userNumber").text(userNumber);
-
 	if (userNumber === targetNumber){
 		alert("you win!!!!");
+		wins++
 		gameStart();
 	}
 
 	if (userNumber > targetNumber){
 		alert("you lose!!!")
+		losses++
 		gameStart();
 	}
 });
 
 
-if (userNumber === targetNumber){
-	alert("you win!!!!");
-	gameStart();
-}
+// if (userNumber === targetNumber){
+// 	alert("you win!!!!");
+// 	gameStart();
+// }
 
-if (userNumber > targetNumber){
-	alert("you lose!!!")
-	gameStart();
-}
+// if (userNumber > targetNumber){
+// 	alert("you lose!!!")
+// 	gameStart();
+// }
 
 
 });
