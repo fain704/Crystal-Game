@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Untitled</title>
+        <link rel="stylesheet" href="assets/reset.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/style.css">
+        <!-- <link rel="author" href="humans.txt"> -->
+    </head>
+    <body>
+        <main class="container">
+            <div class="row">
+                <div class="col-12 jumbotron">
+                    <p class="text-center">
+                        <b>Instructions:</b>
+                        click on the crystals to raise your score to match the target number.
+                    </p>
+                    <p class="text-center">
+                        Each crystal has a random number assigned to it for the duration of the game when it is clicked its value will be added to the value of the "User Answer".
+                    </p>
+                    <p class="text-center">
+                        The game is won when the Target Number and the User Number are the same, if you go over then you lose and will be prompted if you would like to play again.
+                    </p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 jumbotron">
+                        <h1 class="text-center">Target Number.</h1>
+                        <h1 class="text-center targetNumber"></h1>
+                        <h1 class="text-center">User Number.</h1>
+                        <div class="text-center">
+                            <span ><h1 class="userNumber"></h1></span>
+                        </div>
+                        <!-- <h1 class="text-center"><span class="usernumber"></span></h1> -->
+                        <div class="text-center">
+                            <img src="images/crystal1.jpg" alt="crystal1" class="img-fluid img-thumbnail crystal1">
+                            <img src="images/crystal2.jpg" alt="crystal2" class="img-fluid img-thumbnail crystal2">
+                            <img src="images/crystal3.jpg" alt="crystal3" class="img-fluid img-thumbnail crystal3">
+                            <img src="images/crystal4.jpg" alt="crystal4" class="img-fluid img-thumbnail crystal4">
+                        </div>
+                </div>
+            </div>
+        </main>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/javaScript.js"></script>
+    </body>
+</html>
