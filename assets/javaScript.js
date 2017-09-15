@@ -34,49 +34,49 @@ console.log("crystal4Val" + crystal4Val);
 console.log("userNumber" + userNumber);
 
 $(".crystal1").on("click", function(){
-	console.log("you just clicked crystal 1")
+	console.log("you just clicked crystal 1");
 	userNumber = userNumber + crystal1Val;
 	console.log(userNumber);
 	$(".userNumber").text(userNumber);
 	if (userNumber === targetNumber){
 		alert("you win!!!!");
-		wins++
+		wins++;
 		gameStart();
 	}
 
 	if (userNumber > targetNumber){
-		alert("you lose!!!")
-		losses++
+		alert("you lose!!!");
+		losses++;
 		gameStart();
 	}
 });
 
 $(".crystal2").on("click", function(){
-	console.log("you just clicked crystal 2")
+	console.log("you just clicked crystal 2");
 	userNumber = userNumber + crystal2Val;
 	console.log(userNumber);
 	$(".userNumber").text(userNumber);
 	if (userNumber === targetNumber){
 		alert("you win!!!!");
-		wins++
+		wins++;
 		gameStart();
 	}
 
 	if (userNumber > targetNumber){
-		alert("you lose!!!")
-		losses++
+		alert("you lose!!!");
+		losses++;
 		gameStart();
 	}	
 });
 
 $(".crystal3").on("click", function(){
-	console.log("you just clicked crystal 3")
+	console.log("you just clicked crystal 3");
 	userNumber = userNumber + crystal3Val;
 	console.log(userNumber);
 	$(".userNumber").text(userNumber);
 	if (userNumber === targetNumber){
 		alert("you win!!!!");
-		wins++
+		wins++;
 		gameStart();
 	}
 
@@ -88,19 +88,19 @@ $(".crystal3").on("click", function(){
 });
 
 $(".crystal4").on("click", function(){
-	console.log("you just clicked crystal 4")
+	console.log("you just clicked crystal 4");
 	userNumber = userNumber + crystal4Val;
 	console.log(userNumber);
 	$(".userNumber").text(userNumber);
 	if (userNumber === targetNumber){
 		alert("you win!!!!");
-		wins++
+		wins++;
 		gameStart();
 	}
 
 	if (userNumber > targetNumber){
-		alert("you lose!!!")
-		losses++
+		alert("you lose!!!");
+		losses++;
 		gameStart();
 	}
 });
